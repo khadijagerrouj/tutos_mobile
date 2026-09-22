@@ -1,0 +1,14 @@
+sequenceDiagram
+actor Auteur
+participant systeme as Systeme
+
+Auteur ->>systeme: acce a la creation d'article
+systeme -->>Auteur: affiche de la reaction
+Auteur ->>systeme: rempit le formulaire
+alt contenu vide (errer)
+systeme -->>Auteur: refusser
+else status brillo, 
+systeme -->>Auteur: sauvgarde
+else [ces nominal ]
+systeme -->>Auteur: sauvegarde
+end
