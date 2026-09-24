@@ -8,4 +8,4 @@ $categories =[
 echo json_encode($categories);
 
 
-?>
+?>                   
