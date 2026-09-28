@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="flex min-h-screen">
+
+        <aside class="bg-gray-800 text-white p-6 w-64">
+            <nav>
+                <a href="#" class="block text-gray-300 hover:bg-gray-700 p-2 rounded-lg">
+                    Tableau de bord
+                </a>
+
+                <a href="#" class="block bg-blue-600 text-white rounded-lg p-2 mt-2">
+                    Categories
+                </a>
+            </nav>
+        </aside>
+
+        <main class="flex-1">
+
+            <header class="bg-white shadow-sm border-b p-4">
+                <h1 class="text-xl font-semibold">Gestion des catégories</h1>
+            </header>
+
+            <section class="p-6">
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+                    Nouvelle catégorie
+                </button>
+
+                <form class="mt-6">
+                    <div class="mb-4">
+                        <label for="nom" class="block mb-2">Nom</label>
+                        <input
+                            type="text"
+                            id="nom"
+                            class="border border-gray-300 rounded-lg w-full p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        >
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="couleur" class="block mb-2">Couleur</label>
+                        <input
+                            type="text"
+                            id="couleur"
+                            class="border border-gray-300 rounded-lg w-full p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        >
+                    </div>
+                </form>
+
+                <table class="w-full mt-6">
+                    <thead>
+                        <tr class="bg-gray-50 text-left text-xs text-gray-500 uppercase">
+                            <th class="p-3">Nom</th>
+                            <th class="p-3">Couleur</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="border-b hover:bg-gray-50">
+                            <td class="p-3">Design UI/UX</td>
+                            <td class="p-3">red</td>
+                        </tr>
+
+                        <tr class="border-b hover:bg-gray-50">
+                            <td class="p-3">Développement mobile</td>
+                            <td class="p-3">blue</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
+```
