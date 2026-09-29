@@ -1,48 +1,39 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gestion des catégories</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-
-    <h1>Mes catégories</h1>
-
-    <button id="btn-show-form">Nouvelle catégorie</button>
-
-    <section id="section-form" hidden>
-
-        <form id="form-categorie">
-
-            <input type="text" id="cat-nom" placeholder="Nom">
-
-            <input type="text" id="cat-couleur" placeholder="Couleur">
-
-            <button type="submit">Ajouter</button>
-
-            <button type="button" id="btn-cancel-form">
-                Annuler
-            </button>
-
-        </form>
-
-    </section>
-
-    <table border="1">
-
+    <form id="section-form">
+        <label>Nom:</label>
+        <input type="text" id="cat-nom">
+        <br>
+        <label>Couleur:</label>
+        <input type="text" id="cat-couleur">
+        <br>
+        <label>icone:</label>
+        <input type="text" id="cat-icone">
+        <br>
+        <button id="btn-cancel-form" type="button">Annuler</button>
+        <button>Ajouter</button>
+    </form>
+    <br>
+    <table border="1" width="100%">
         <thead>
             <tr>
+                <th>ID</th>
                 <th>Nom</th>
-                <th>Couleur</th>
+                <th>Coleur</th>
+                <th>Icone</th>
+                <th>Action</th>
             </tr>
         </thead>
 
-        <tbody id="table-categories-body">
+        <tbody id="tableBody">
         </tbody>
-
     </table>
-
-    <script src="script.js"></script>
-
+    <script src="main.js"></script>
 </body>
 </html>
