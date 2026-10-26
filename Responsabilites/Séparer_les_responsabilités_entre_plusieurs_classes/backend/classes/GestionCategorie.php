@@ -1,7 +1,7 @@
 <?php
     require_once __DIR__ . '/Categorie.php';
     class GestionCategorie{
-        private static $dataFile = "../data/categorie.json";
+        private static $dataFile = __DIR__ . '/../data/categorie.json';
 
         public function getAll():array{
             $categories = [];

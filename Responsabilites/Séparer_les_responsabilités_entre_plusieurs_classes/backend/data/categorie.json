@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "nom": "Roman",
+        "couleur": "red",
+        "icone": "book"
+    },
+    {
+        "id": 2,
+        "nom": "Science",
+        "couleur": "blue",
+        "icone": "flask"
+    }
+]
